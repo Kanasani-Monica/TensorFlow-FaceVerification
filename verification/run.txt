@@ -1,0 +1,44 @@
+export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH
+
+export PYTHONPATH=/git-space/tfmtcnn:$PYTHONPATH
+export PYTHONPATH=/git-space/tfface:$PYTHONPATH
+export PYTHONPATH=/git-space/slim-generic-dataset/research/slim:$PYTHONPATH
+
+#python /git-space/tfface/tfface/verify.py --model_name=inception_resnet_v2 --checkpoint_path=/tensorflow/models/inception_resnet_v2/MS_20K_CD --dataset_dir=/tensorflow/models/inception_resnet_v2/MS_20K_CD --image1=/workspace/datasets/casia/casia_maxpy_mtcnnpy_182/Aaron_Eckhart/Aaron_Eckhart_0001.png --image2=/workspace/datasets/aligned-images/Arnold_Schwarzenegger/Arnold_Schwarzenegger_0040.png
+
+#python /git-space/tfface/tfface/verify.py --model_name=inception_resnet_v2 --checkpoint_path=/tensorflow/models/inception_resnet_v2/MS_20K_CD --dataset_dir=/tensorflow/models/inception_resnet_v2/MS_20K_CD --image1=/workspace/datasets/aligned-images/Arnold_Schwarzenegger/Arnold_Schwarzenegger_0034.png --image2=/workspace/datasets/aligned-images/Arnold_Schwarzenegger/Arnold_Schwarzenegger_0040.png
+
+#python /git-space/tfface/tfface/verify1.py --model_name=inception_resnet_v2 --checkpoint_path=/tensorflow/models/inception_resnet_v2/MS_20K_CD --dataset_dir=/tensorflow/models/inception_resnet_v2/MS_20K_CD --directory=/home/demo/datasets/casia/testset_aligned_182/Arnold_Schwarzenegger
+
+#python /git-space/tfface/tfface/verify1.py --model_name=inception_resnet_v2 --checkpoint_path=/tensorflow/models/inception_resnet_v2/MS_20K_CD --dataset_dir=/tensorflow/models/inception_resnet_v2/MS_20K_CD --directory=/workspace/datasets/FaceScrub/1
+
+#python /git-space/tfface/tfface/verify2.py --model_name=inception_resnet_v2 --checkpoint_path=/tensorflow/models/inception_resnet_v2/MS_20K_CD --dataset_dir=/tensorflow/models/inception_resnet_v2/MS_20K_CD --directory1=/home/demo/datasets/casia/testset_aligned_182/Arnold_Schwarzenegger --directory2=/home/demo/datasets/casia/testset_aligned_182/George_W_Bush
+
+#python /git-space/tfface/tfface/verify2.py --model_name=inception_resnet_v2 --checkpoint_path=/tensorflow/models/inception_resnet_v2/MS_20K_CD --dataset_dir=/tensorflow/models/inception_resnet_v2/MS_20K_CD --directory1=/workspace/datasets/FaceScrub/1 --directory2=/workspace/datasets/FaceScrub/2
+
+python /git-space/tfface/tfface/verify1.py --model_name=inception_resnet_v2 --checkpoint_path=/tensorflow/models/inception_resnet_v2/MS_20K_CD --dataset_dir=/tensorflow/models/inception_resnet_v2/MS_20K_CD --directory=/workspace/datasets/FaceScrub/1 1>1.txt
+
+python /git-space/tfface/tfface/verify1.py --model_name=inception_resnet_v2 --checkpoint_path=/tensorflow/models/inception_resnet_v2/MS_20K_CD --dataset_dir=/tensorflow/models/inception_resnet_v2/MS_20K_CD --directory=/workspace/datasets/FaceScrub/2 1>2.txt
+
+python /git-space/tfface/tfface/verify1.py --model_name=inception_resnet_v2 --checkpoint_path=/tensorflow/models/inception_resnet_v2/MS_20K_CD --dataset_dir=/tensorflow/models/inception_resnet_v2/MS_20K_CD --directory=/workspace/datasets/FaceScrub/3 1>3.txt
+
+python /git-space/tfface/tfface/verify1.py --model_name=inception_resnet_v2 --checkpoint_path=/tensorflow/models/inception_resnet_v2/MS_20K_CD --dataset_dir=/tensorflow/models/inception_resnet_v2/MS_20K_CD --directory=/workspace/datasets/FaceScrub/4 1>4.txt
+
+python /git-space/tfface/tfface/verify1.py --model_name=inception_resnet_v2 --checkpoint_path=/tensorflow/models/inception_resnet_v2/MS_20K_CD --dataset_dir=/tensorflow/models/inception_resnet_v2/MS_20K_CD --directory=/workspace/datasets/FaceScrub/5 1>5.txt
+
+python /git-space/tfface/tfface/verify1.py --model_name=inception_resnet_v2 --checkpoint_path=/tensorflow/models/inception_resnet_v2/MS_20K_CD --dataset_dir=/tensorflow/models/inception_resnet_v2/MS_20K_CD --directory=/workspace/datasets/FaceScrub/6 1>6.txt
+
+python /git-space/tfface/tfface/verify1.py --model_name=inception_resnet_v2 --checkpoint_path=/tensorflow/models/inception_resnet_v2/MS_20K_CD --dataset_dir=/tensorflow/models/inception_resnet_v2/MS_20K_CD --directory=/workspace/datasets/FaceScrub/7 1>7.txt
+
+python /git-space/tfface/tfface/verify2.py --model_name=inception_resnet_v2 --checkpoint_path=/tensorflow/models/inception_resnet_v2/MS_20K_CD --dataset_dir=/tensorflow/models/inception_resnet_v2/MS_20K_CD --directory1=/workspace/datasets/FaceScrub/1 --directory2=/workspace/datasets/FaceScrub/2 1>1-2.txt 
+
+python /git-space/tfface/tfface/verify2.py --model_name=inception_resnet_v2 --checkpoint_path=/tensorflow/models/inception_resnet_v2/MS_20K_CD --dataset_dir=/tensorflow/models/inception_resnet_v2/MS_20K_CD --directory1=/workspace/datasets/FaceScrub/1 --directory2=/workspace/datasets/FaceScrub/3 1>1-3.txt
+
+python /git-space/tfface/tfface/verify2.py --model_name=inception_resnet_v2 --checkpoint_path=/tensorflow/models/inception_resnet_v2/MS_20K_CD --dataset_dir=/tensorflow/models/inception_resnet_v2/MS_20K_CD --directory1=/workspace/datasets/FaceScrub/1 --directory2=/workspace/datasets/FaceScrub/4 1>1-4.txt
+
+python /git-space/tfface/tfface/verify2.py --model_name=inception_resnet_v2 --checkpoint_path=/tensorflow/models/inception_resnet_v2/MS_20K_CD --dataset_dir=/tensorflow/models/inception_resnet_v2/MS_20K_CD --directory1=/workspace/datasets/FaceScrub/2 --directory2=/workspace/datasets/FaceScrub/5 1>2-5.txt
+
+python /git-space/tfface/tfface/verify2.py --model_name=inception_resnet_v2 --checkpoint_path=/tensorflow/models/inception_resnet_v2/MS_20K_CD --dataset_dir=/tensorflow/models/inception_resnet_v2/MS_20K_CD --directory1=/workspace/datasets/FaceScrub/2 --directory2=/workspace/datasets/FaceScrub/6 1>2-6.txt
+
+
+
